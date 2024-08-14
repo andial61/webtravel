@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playwrite+DK+Uloopet:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --primary-color: #fe5b3e;
+  --text-dark: #0f172a;
+  --text-light: #475569;
+  --extra-light: #f2f2f2;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --gradient: linear-gradient(to bottom, #fe5c3c, #fc8023);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+.container h1 span{
+    color: #ffa500;
+}   
+.navbar-brand{
+    font-size: 2rem;
+    color: black;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+.navbar-brand:hover{
+    color: black;
+}
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    color: black;
+}
+.search{
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -35px;
+    border: 2px solid #fc8023;
+}
+.btn0{
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    background: var(--gradient);
+    color: white;
+    border-radius: 60px;
+    font-weight: 700;
+}
+.header__container {
+    display: flex;
+    gap: 2rem 0;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+  
+  .header__container::before {
+    margin-bottom: 5rem;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 10%;
+    right: 0;
+    width: 100%;
+    height: 70%;
+    background: var(--gradient);
+    border-radius: 1rem 1rem 0.5rem 0.5rem;
+    z-index: -1;
+  }
+  
+  .header__content h1 {
+    position: relative;
+    isolation: isolate;
+    margin-bottom: 2rem;
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    line-height: 3.25rem;
+    padding-left: 20px; /* Menggeser teks h1 sedikit ke kanan */
+}
+
+.header__content h1::before {
+    position: absolute;
+    content: "";
+    left: 20px; /* Sesuaikan posisi garis bawah dengan padding teks */
+    bottom: -1rem;
+    height: 4px;
+    width: 2rem;
+    background-color: var(--primary-color);
+}
+
+.header__content p {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    line-height: 1.75rem;
+    padding-left: 20px; /* Menggeser teks paragraf sedikit ke kanan */
+}
+  
+.btn{
+    width: auto;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: var(--gradient);
+    color: white ;
+    border-radius: 5px; /* Membuat sudut tombol menjadi melengkung */
+    text-align: center; /* Membuat teks tombol tetap di tengah */
+
+}
+.btn:hover{
+    background-color: rgba(148, 6, 6, 0.853);
+    transition: 5ms;
+}
+.btn1{
+    width: auto;
+    margin-top: 2rem;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background: var(--gradient);
+    color: white ;
+    border-radius: 5px; /* Membuat sudut tombol menjadi melengkung */
+    text-align: center; /* Membuat teks tombol tetap di tengah */
+}
+.btn1:hover{
+    background-color: rgba(210, 100, 4, 0.853);
+    transition: 5ms;
+}
+.about img {
+    width: 100%; /* Mengatur lebar gambar untuk menyesuaikan dengan lebar kolom */
+    height: 250px; /* Menetapkan tinggi yang konsisten untuk semua gambar */
+    object-fit: cover; /* Memastikan gambar tetap proporsional dan tidak terdistorsi */
+    border-radius: 5px; /* Menambahkan sedikit lengkungan di sudut gambar */
+}
+
+.about h5 {
+    margin-top: 15px; /* Menambahkan jarak antara gambar dan judul */
+    font-weight: 700; /* Mengatur ketebalan font untuk judul */
+    font-size: 1.25rem; /* Mengatur ukuran font untuk judul */
+}
+
+.about p {
+    margin-top: 10px; /* Memberikan jarak antara judul dan paragraf */
+    font-size: 1rem; /* Mengatur ukuran font untuk paragraf */
+    line-height: 1.5rem; /* Menambahkan jarak antar baris teks untuk keterbacaan */
+}
+
+.about .col-lg-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Memastikan teks dan gambar sejajar di tengah */
+}
+
+.card:hover{
+    box-shadow: 15px 14px 10px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: 15px 14px 10px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 15px 14px 10px -7px rgba(0,0,0,0.75);
+transition: 0.7s;
+}
+/* CSS untuk menyelaraskan gambar dalam card */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; /* Menyesuaikan padding jika diperlukan */
+}
+
+.card-body img {
+    max-width: 100%; /* Menjamin gambar tidak melebihi lebar card */
+    height: auto; /* Memastikan rasio gambar tetap terjaga */
+}
+
+/* Styling untuk card */
+.card {
+    margin-top: 2rem;
+    border: none; /* Menghapus border default card */
+    background-color: #f8f9fa; /* Warna latar belakang card */
+    border-radius: 0.5rem; /* Memberi sudut membulat pada card */
+    overflow: hidden; /* Menghindari konten melebihi batas card */
+}
+
+.card img {
+    width: fit-content;
+    max-height: 200px; /* Maksimal tinggi gambar */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+
+/* Styling untuk heading dan paragraf */
+h6 {
+    margin-top: 1rem; /* Jarak antara gambar dan heading */
+    color: #fc8023; /* Warna heading */
+}
+
+p {
+    margin: 0.5rem 0; /* Jarak atas dan bawah paragraf */
+    color: #333; /* Warna teks paragraf */
+}
+/* Section Packages Start */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #fc8023;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+   
+     border-radius: 5px;
+     width: 100%;
+     height: auto;
+     object-fit: cover; /* Membuat gambar sesuai ukuran container */
+    
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #fc8023;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #fc8023;
+    color: white;
+    border-radius: 5px;
+}
+.packages .card .card-body a:hover{
+    background-color: rgba(210, 100, 4, 0.853);
+    transition: 5ms;
+}
+/* Section Packages End */
+
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+/* Footer End */
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.whatsapp-float i {
+    margin-top: 15px; /* Memposisikan ikon di tengah secara vertikal */
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transition: background-color 0.3s;
+}
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    background: #25d366; /* Warna hijau khas WhatsApp */
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  
+  .whatsapp-button i {
+    margin-right: 8px; /* Jarak antara ikon dan teks */
+    font-size: 18px;
+  }
+  
+
+@media (width > 768px) {
+    header::before {
+      height: calc(100% - 4rem);
+    }
+.header__container {
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+  }
+
+  .header__container::before {
+    right: 5rem;
+    width: calc(50% - 4rem);
+    height: 100%;
+  }
+
+  .header__image {
+    grid-column: 3/6;
+  }
+
+  .header__content {
+    grid-area: 1/1/2/3;
+  }
+}
