@@ -63,11 +63,9 @@
   }
   
   .header__container::before {
-    margin-bottom: 5rem;
     position: absolute;
     content: "";
     top: 0;
-    left: 10%;
     right: 0;
     width: 100%;
     height: 70%;
@@ -84,7 +82,6 @@
     font-weight: 800;
     color: var(--text-dark);
     line-height: 3.25rem;
-    padding-left: 20px; /* Menggeser teks h1 sedikit ke kanan */
 }
 
 .header__content h1::before {
@@ -102,7 +99,6 @@
     font-weight: 500;
     color: var(--text-dark);
     line-height: 1.75rem;
-    padding-left: 20px; /* Menggeser teks paragraf sedikit ke kanan */
 }
   
 .btn{
