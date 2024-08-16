@@ -93,7 +93,8 @@
   }
   
   nav {
-    position: absolute;
+    top: 0;
+    position: fixed;
     isolation: isolate;
     width: 100%;
     height: auto;
