@@ -93,9 +93,10 @@
   }
   
   nav {
-    position: fixed;
+    position: absolute;
     isolation: isolate;
     width: 100%;
+    height: auto;
     z-index: 9;
   }
   
@@ -358,7 +359,7 @@ footer {
   bottom: 0;
 }
 
-@media (max-height:800px) {
+@media (max-height:768px) {
   footer {
       position: static;
   }
@@ -513,7 +514,7 @@ footer {
   color: #3F71EA;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 768px) {
   .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
       display: block;
       width: 100%;
