@@ -273,6 +273,7 @@ transition: 0.7s;
 .card-body img {
     max-width: 100%; /* Menjamin gambar tidak melebihi lebar card */
     height: auto; /* Memastikan rasio gambar tetap terjaga */
+    width: fit-content;
 }
 
 /* Styling untuk card */
