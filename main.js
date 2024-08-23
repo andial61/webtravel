@@ -16,7 +16,7 @@ navLinks.addEventListener("click", (e) => {
 
 const scrollRevealOption = {
   distance: "50px",
-  origin: "bottom",
+  origin: "left",
   duration: 1000,
 };
 
@@ -32,7 +32,11 @@ ScrollReveal().reveal(".header__content p", {
   ...scrollRevealOption,
   delay: 1000,
 });
-  ScrollReveal().reveal(".btn1", {
-    ...scrollRevealOption,
-    delay: 1500,
-  });
+ScrollReveal().reveal(".btn1", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
+ScrollReveal().reveal(".card", {
+...scrollRevealOption,
+delay: 500,
+});
