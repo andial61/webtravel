@@ -362,7 +362,7 @@ footer {
   bottom: 0;
 }
 
-@media (max-height:768px) {
+@media (max-width:1400px) {
   footer {
       position: static;
   }
@@ -379,6 +379,7 @@ footer {
   font: bold 16px sans-serif;
   padding: 50px 50px 60px 50px;
   margin-top: 80px;
+  overflow: hidden;
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
@@ -528,6 +529,97 @@ footer {
       margin-left: 0;
   }
 }       
+
+/* iPhone SE (1st generation) - 320x568px */
+@media (max-width: 320px) {
+  .footer-distributed {
+    padding: 20px 10px;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-distributed .footer-center i {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+/* iPhone 6/7/8 - 375x667px */
+@media (max-width: 375px) {
+  .footer-distributed {
+    padding: 20px 15px;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-distributed .footer-center i {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+/* iPhone X/XS/11 Pro - 375x812px */
+@media (max-width: 375px) and (min-height: 812px) {
+  .footer-distributed {
+    padding: 25px 20px;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .footer-distributed .footer-center i {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+/* iPhone XR/11 - 414x896px */
+@media (max-width: 414px) and (min-height: 896px) {
+  .footer-distributed {
+    padding: 30px 20px;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer-distributed .footer-center i {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+/* iPhone 12/13/14 - 430x932px */
+@media (max-width: 430px) {
+  .footer-distributed {
+    padding: 30px 25px;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer-distributed .footer-center i {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
 
 /* Footer End */
 
